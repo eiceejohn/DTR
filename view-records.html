@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>View Records</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" type="image/x-icon" href="https://i.imghippo.com/files/TgnI71725335077.png">
+</head>
+<body>
+    <header class="header">
+        <div class="header-content">
+            <img src="https://i.imghippo.com/files/TgnI71725335077.png" alt="Logo" class="logo"> <!-- Replace with your actual logo file -->
+            <h1>CD Technologies Asia, Inc.</h1>
+        </div>
+    </header>
+    <div class="records-container">
+
+        <h3>Clock-In/Out Records</h3>
+        <table id="clockRecordsTable">
+            <thead>
+                <tr>
+                    <th>ID</th>
+                    <th>Name</th>
+                    <th>Department</th>
+                    <th>Clock In</th>
+                    <th>Clock Out</th>
+                    <th>Action</th>
+                </tr>
+            </thead>
+            <tbody id="clockRecordsBody"></tbody>
+        </table>
+
+        <h3>Leave Records</h3>
+        <table id="leaveRecordsTable">
+            <thead>
+                <tr>
+                    <th>ID</th>
+                    <th>Name</th>
+                    <th>Department</th>
+                    <th>Leave Type</th>
+                    <th>Start Date</th>
+                    <th>End Date</th>
+                    <th>Number of Days</th>
+                    <th>Action</th>
+                </tr>
+            </thead>
+            <tbody id="leaveRecordsBody">
+                <!-- Records will be populated here -->
+            </tbody>
+        </table>
+        <!-- Print Button -->
+        <button id="printButton">Print</button>
+        <button id="backButton">Back to Dashboard</button>
+    </div>
+    <script src="https://cdn.sheetjs.com/xlsx-0.18.5/package/dist/xlsx.full.min.js"></script>
+    <script src="view-records.js"></script>
+</body>
+</html>

@@ -1,0 +1,351 @@
+/* General Styles */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    color: #333;
+    margin: 0;
+    padding: 0;
+    opacity: 0; /* Start invisible */
+    animation: zoomIn .5s ease-in-out forwards; /* Zoom in animation */
+}
+
+/* Zoom-In Animation */
+@keyframes zoomIn {
+    from {
+        transform: scale(0.9);
+        opacity: 0;
+    }
+    to {
+        transform: scale(1);
+        opacity: 1;
+    }
+}
+
+/* Dashboard container */
+.dashboard-container {
+    width: 70%;
+    margin: 20px auto;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+}
+
+/* Heading styles */
+h2 {
+    color: #e74c3c; /* Red */
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+h3 {
+    color: #333;
+    margin-top: 20px;
+}
+
+/* Navigation styles */
+nav {
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+nav button {
+    background-color: #e74c3c; /* Red */
+    color: #fff;
+    border: none;
+    padding: 12px 24px;
+    margin: 0 10px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s;
+}
+
+nav button:hover {
+    background-color: #c0392b; /* Darker Red */
+}
+
+/* Form styling */
+form {
+    margin-bottom: 20px;
+    background-color: #fff;
+    padding: 15px;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+label {
+    display: block;
+    margin: 10px 0 5px;
+    font-weight: bold;
+}
+
+input, select, button {
+    margin: 5px 0 10px;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+/* Button styling */
+button, #clockInButton, #clockOutButton, .deleteButton, #logoutButton {
+    background-color: #e74c3c; /* Red */
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    margin: 5px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s;
+}
+
+button:hover, #clockInButton:hover, #clockOutButton:hover, .deleteButton:hover, #logoutButton:hover {
+    background-color: #c0392b; /* Darker Red */
+}
+
+#clockOutButton {
+    background-color: #3498db; /* Blue for differentiation */
+}
+
+#clockOutButton:hover {
+    background-color: #2980b9; /* Darker Blue */
+}
+
+.deleteButton {
+    font-size: 14px;
+    padding: 5px 10px;
+}
+
+/* Success message */
+.success-message {
+    color: #2ecc71; /* Green */
+    margin-top: 10px;
+    text-align: center;
+}
+
+/* Change password container */
+#changePasswordContainer {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Sections */
+#clockInOutSection, #viewRecordsSection {
+    margin-top: 20px;
+}
+
+/* Table styling */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+
+table, th, td {
+    border: 1px solid #ddd;
+}
+
+th, td {
+    padding: 12px;
+    text-align: left;
+}
+
+th {
+    background-color: #333;
+    color: #fff;
+}
+
+tr:nth-child(even) {
+    background-color: #f9f9f9;
+}
+
+tr:hover {
+    background-color: #f1f1f1;
+}
+
+/* General Styles */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    color: #333;
+    margin: 0;
+    padding: 0;
+}
+
+/* Header Styles */
+.header {
+    background: linear-gradient(45deg, #b22222, #8b0000); /* Gradient background similar to your image */
+    color: #fff;
+    padding: 10px 20px;
+    display: flex;
+    align-items: center;
+    opacity: 0; /* Start invisible */
+    animation: slideDown .3s ease-in-out forwards; /* Slide down animation */
+    animation-delay: 0.3s; /* Delays the header animation for a smoother effect */
+}
+
+/* Slide Down Animation for Header */
+@keyframes slideDown {
+    to {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+.header-content {
+    display: flex;
+    align-items: center;
+}
+
+.logo {
+    height: 50px; /* Adjust the logo size accordingly */
+    margin-right: 20px;
+}
+
+h1 {
+    font-size: 1.8em;
+    margin: 0;
+}
+
+/* Admin Dashboard Container */
+.admin-dashboard-container {
+    width: 70%;
+    margin: 20px auto;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+}
+
+/* Other Styles */
+h2 {
+    color: #e74c3c; /* Red */
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+nav {
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+nav button {
+    background-color: #e74c3c; /* Red */
+    color: #fff;
+    border: none;
+    padding: 12px 24px;
+    margin: 0 10px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s;
+}
+
+nav button:hover {
+    background-color: #c0392b; /* Darker Red */
+}
+
+h3 {
+    color: #333;
+    margin-top: 20px;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+
+table, th, td {
+    border: 1px solid #ddd;
+}
+
+th, td {
+    padding: 12px;
+    text-align: left;
+}
+
+th {
+    background-color: #333;
+    color: #fff;
+}
+
+tr:nth-child(even) {
+    background-color: #f9f9f9;
+}
+
+tr:hover {
+    background-color: #f1f1f1;
+}
+
+.deleteButton {
+    background-color: #e74c3c; /* Red */
+    color: #fff;
+    border: none;
+    padding: 5px 10px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 14px;
+    transition: background-color 0.3s;
+}
+
+.deleteButton:hover {
+    background-color: #c0392b; /* Darker Red */
+}
+
+#logoutButton {
+    background-color: #e74c3c; /* Red */
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    margin-top: 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s;
+}
+
+#logoutButton:hover {
+    background-color: #c0392b; /* Darker Red */
+}
+
+.leave-form {
+    max-width: 600px;
+    margin: auto;
+}
+
+.form-group {
+    margin-bottom: 15px;
+}
+
+.form-group.row {
+    display: flex;
+    justify-content: space-between;
+}
+
+.form-group.row .col {
+    flex: 1;
+    margin-right: 10px;
+}
+
+.form-group.row .col:last-child {
+    margin-right: 0;
+}
+
+.btn-primary {
+    background-color: #e74c3c;
+    border-color: #e74c3c;
+    width: 100%;
+}
+
+.btn-primary:hover {
+    background-color: #c0392b;
+    border-color: #c0392b;
+}
+
+

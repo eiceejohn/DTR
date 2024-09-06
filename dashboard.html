@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header class="header">
+        <div class="header-content">
+            <img src="https://i.imghippo.com/files/TgnI71725335077.png" alt="Logo" class="logo"> <!-- Replace with your actual logo file -->
+            <h1>CD Technologies Asia, Inc.</h1>
+        </div>
+    </header>
+    <div class="dashboard-container">
+        <h2>Welcome to Your Dashboard</h2>
+        <p id="welcomeMessage"></p>
+
+        <!-- Navigation Tabs -->
+        <nav>
+            <button id="tabViewRecords">View Records</button>
+        </nav>
+
+        <!-- Clock In/Out Section -->
+        <div id="clockInOutSection">
+            <h3>Clock In/Out</h3>
+            <button id="clockInButton">Clock In</button>
+            <button id="clockOutButton">Clock Out</button>
+        </div>
+
+        <!-- View Records Section (Initially Hidden) -->
+        <div id="viewRecordsSection" style="display:none;">
+            <h3>Clock-In/Out Records</h3>
+            <ul id="recordsList"></ul>
+        </div>
+
+        <!-- Request Leave Section -->
+        <h3>Request Leave</h3>
+        <form id="leaveForm">
+            <div class="form-group">
+                <label for="leaveType">Leave Type:</label>
+                <select id="leaveType" name="leaveType" required>
+                    <option value="">Select type on leave.</option>
+                    <option value="typeofleave">Select type on leave.</option>
+                    <option value="sick">Sick Leave</option>
+                    <option value="vacation">Vacation Leave</option>
+                    <option value="birthday">Birthday Leave</option>
+                    <option value="emerrgency">Emerrgency Leave</option>
+                    <option value="service incentive">Service Incentive Leave</option>
+                    <option value="maternity">Maternity Leave</option>
+                    <option value="paternity">Paternity Leave</option>
+                </select>
+            </div>
+        
+            <div class="form-group row">
+                <div class="col">
+                    <label for="startDate">Start Date:</label>
+                    <input type="date" id="startDate" name="startDate" required>
+                </div>
+                <div class="col">
+                    <label for="endDate">End Date:</label>
+                    <input type="date" id="endDate" name="endDate" required>
+                </div>
+            </div>
+        
+            <div class="form-group">
+                <label for="numberOfDays">Number of Days:</label>
+                <input type="number" id="numberOfDays" name="numberOfDays" step="0.5" min="0.5" required>
+            </div>
+            
+            <button type="submit">Submit Leave Request</button>
+        </form>
+        <p id="leaveMessage" class="success-message"></p>
+
+        <!-- Change Password Section -->
+        <button id="showChangePasswordButton">Change Password</button>
+        
+        <div id="changePasswordContainer" style="display: none;">
+            <h3>Change Password</h3>
+            <form id="changePasswordForm">
+                <label for="currentPassword">Current Password:</label>
+                <input type="password" id="currentPassword" required>
+                
+                <label for="newPassword">New Password:</label>
+                <input type="password" id="newPassword" required>
+                
+                <label for="confirmNewPassword">Confirm New Password:</label>
+                <input type="password" id="confirmNewPassword" required>
+                
+                <button type="submit">Change Password</button>
+            </form>
+            <p id="passwordMessage" class="success-message"></p>
+        </div>
+        
+        <!-- Logout Button -->
+        <button id="logoutButton">Logout</button>
+    </div>
+    <script src="dashboard.js"></script>
+</body>
+</html>

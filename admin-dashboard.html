@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admin Dashboard</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Header Section -->
+    <header class="header">
+        <div class="header-content">
+            <img src="https://i.imghippo.com/files/TgnI71725335077.png" alt="Logo" class="logo"> <!-- Replace with your actual logo file -->
+            <h1>CD Asia Enterprise System</h1>
+        </div>
+    </header>
+
+    <div class="dashboard-container">
+        <h2>Admin Dashboard</h2>
+        <p>Welcome, Admin!</p>
+
+        <!-- View All Records Section -->
+        <h3>All Clock-In/Out Records</h3>
+        <table id="allRecordsTable">
+            <thead>
+                <tr>
+                    <th>ID</th>
+                    <th>Name</th>
+                    <th>Department</th>
+                    <th>Clock In</th>
+                    <th>Clock Out</th>
+                    <th>Actions</th> <!-- For the Delete button -->
+                </tr>
+            </thead>
+            <tbody id="allRecordsBody"></tbody>
+        </table>
+
+        <button id="logoutButton">Logout</button>
+    </div>
+    <script src="admin-dashboard.js"></script>
+</body>
+</html>

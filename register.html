@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Register</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" type="image/x-icon" href="https://i.imghippo.com/files/TgnI71725335077.png">
+</head>
+<body>
+    <header class="header">
+        <div class="header-content">
+            <img src="https://i.imghippo.com/files/TgnI71725335077.png" alt="Logo" class="logo"> <!-- Replace with your actual logo file -->
+            <h1>CD Technologies Asia, Inc.</h1>
+        </div>
+    </header>
+    <div class="register-container">
+        <h2>Register</h2>
+        <form id="registerForm">
+            <label for="registerID">ID Number:</label>
+            <input type="text" id="registerID" required>
+            
+            <label for="registerName">Name:</label>
+            <input type="text" id="registerName" required>
+            
+            <label for="registerDepartment">Department:</label>
+            <input type="text" id="registerDepartment" required>
+            
+            <label for="registerUsername">Username:</label>
+            <input type="text" id="registerUsername" required>
+            
+            <label for="registerPassword">Password:</label>
+            <input type="password" id="registerPassword" required>
+            
+            <button type="submit">Register</button>
+        </form>
+        <p id="registerError" class="error-message" style="display:none;"></p>
+        <p>Already have an account? <a href="index.html">Login here</a></p>
+    </div>
+    <script src="register.js"></script>
+</body>
+</html>
