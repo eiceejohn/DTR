@@ -176,3 +176,37 @@ document.addEventListener("DOMContentLoaded", function() {
     });
 });
 
+// Create a new user
+function signUpUser(email, password) {
+    auth.createUserWithEmailAndPassword(email, password)
+      .then((userCredential) => {
+        // User created
+        const user = userCredential.user;
+        console.log('User signed up:', user);
+      })
+      .catch((error) => {
+        console.error('Error signing up:', error);
+      });
+  }
+  
+  // Log in user
+  function loginUser(email, password) {
+    auth.signInWithEmailAndPassword(email, password)
+      .then((userCredential) => {
+        // User logged in
+        const user = userCredential.user;
+        console.log('User logged in:', user);
+      })
+      .catch((error) => {
+        console.error('Error logging in:', error);
+      });
+  }
+  
+  // Log out user
+  function logoutUser() {
+    auth.signOut().then(() => {
+      console.log('User logged out');
+    });
+  }
+  
+
